@@ -19,9 +19,19 @@
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-        <ordering.domain.common.version>1.0</ordering.domain.common.version>
+        <ordering-domain-common-version>1.0</ordering-domain-common-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.trendwa.eshop</groupId>
+                <artifactId>ordering-domain-common</artifactId>
+                <version>${ordering-domain-common-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
